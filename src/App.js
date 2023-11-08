@@ -17,7 +17,7 @@ function App() {
       if(situ === ""){
         alert ("вы не ввели город")
       }else{
-        alert ("вы не правильно ввели горд")
+        alert ("вы не правильно ввели город")
       }
     }
    
@@ -43,6 +43,7 @@ function App() {
       <div className="vanta" ref={myRef}></div>
       <div className="content">
       <div className="input">
+      <h1>Расул Таалайбекович</h1>
         <input className="inputt" placeholder="Введите город" value={situ} onChange={(e)=>setSitu(e.target.value)} type="text" />
         <button onClick={getWeather} className="btn">показать</button>
         </div>
